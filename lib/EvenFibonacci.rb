@@ -3,7 +3,6 @@ class EvenFibonacci
 
   def initialize
     @fibonacci_array = [0,1]
-    @even_array = []
   end
 
   def make_fibonacci_array
@@ -19,27 +18,18 @@ class EvenFibonacci
     return @fibonacci_array
   end
 
-  def even_check(num)
-    num.even?
-  end
-
-  def remove_odds
-    @even_array = []
+  def even_sum
+    even_sum = 0
     for i in 0..(@fibonacci_array.length - 1)do
-      if (even_check(@fibonacci_array[i]))
-        @even_array << @fibonacci_array[i]
+      if ((@fibonacci_array[i]).even?)
+        even_sum += @fibonacci_array[i]
       end
     end
-    return @even_array
-  end
-
-  def summate_array(array)
-    array.inject(:+)
+    return even_sum
   end
 
 end
 
 new = EvenFibonacci.new
-new.make_fibonacci_array
-new.remove_odds
-print new.summate_array(new.even_array)
+print new.make_fibonacci_array
+print new.even_sum
