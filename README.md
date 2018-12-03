@@ -1,6 +1,6 @@
-# Sparta_Global_FizzBuzz_CodeAlong
+# Sparta_Global_OOP_Euler_Challanges
 
-Project contains multiple small tasks from the project Euler site: https://projecteuler.net.
+Project contains multiple challanges from the project Euler site: https://projecteuler.net.
 
 The repo is constructed using the principles of object oriented programming and each method is tested using RSpec.
 
